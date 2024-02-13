@@ -1,4 +1,5 @@
 # TMUX
+
 My tmux setup
 
 install tmux and tmux plugins
@@ -11,10 +12,10 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 To start iterm with tmux ad this sript to `Send text at start`:
 
 ```
-tmux ls && read tmux_session && tmux attach -t ${tmux_session:-default} || tmux attach || tmux 
+tmux ls && read tmux_session && tmux attach -t ${tmux_session:-default} || tmux attach || tmux
 ```
 
-Run source config: 
+Run source config:
 
 ```
 tmux source ~/.config/tmux/tmux.conf
@@ -30,10 +31,8 @@ https://github.com/jrmoulton/tmux-sessionizer
 First install rust following instauctions: https://doc.rust-lang.org/cargo/getting-started/installation.html
 Then run `cargo install tmux-sessionizer` to install CLI tool
 
-then you can use tms command, but firest setup default path to search for repositories f.e.:
+Then you can use tms command, but first setup default path to search for repositories f.e.:
 
 ```
-tms -p ~/Files
+tms config -p ~/.dotfiles ~/Files ~/.config
 ```
-
-

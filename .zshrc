@@ -120,3 +120,4 @@ alias fpg="fvm flutter pub get"
 alias ftc="fvm flutter test --coverage"
 alias fcr="genhtml coverage/lcov.info -o coverage/html && open coverage/html/index.html"
 alias fbw="fvm flutter pub run build_runner watch --delete-conflicting-outputs"
+alias pn=pnpm
