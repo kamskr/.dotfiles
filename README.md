@@ -13,7 +13,7 @@ brew install git
 ### Stow
 
 ```
-brew install git
+brew install stow
 ```
 
 ## Installation
@@ -23,6 +23,9 @@ First, checkout the .dotfiles repository in you $HOME directory using git
 ```
 git clone https://github.com/kamskr/.dotfiles.git
 cd .dotfiles
+
+# initialize submodules
+git submodule update --init --recursive
 ```
 
 Then use GNU stow to create symlinks
