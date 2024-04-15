@@ -21,7 +21,7 @@ brew install stow
 First, checkout the .dotfiles repository in you $HOME directory using git
 
 ```
-git clone https://github.com/kamskr/.dotfiles.git
+git clone git@github.com:kamskr/.dotfiles.git
 cd .dotfiles
 
 # initialize submodules
