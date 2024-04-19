@@ -104,12 +104,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+export PATH="$PATH:$HOME/fvm/default/bin"
 export PATH="$PATH":"$HOME/.pub-cache/bin"
-
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-
 ## [Completion]
 ## Completion scripts setup. Remove the following line to uninstall
 [[ -f /Users/kamils/.dart-cli-completion/zsh-config.zsh ]] && . /Users/kamils/.dart-cli-completion/zsh-config.zsh || true
@@ -120,4 +116,14 @@ alias fpg="fvm flutter pub get"
 alias ftc="fvm flutter test --coverage"
 alias fcr="genhtml coverage/lcov.info -o coverage/html && open coverage/html/index.html"
 alias fbw="fvm flutter pub run build_runner watch --delete-conflicting-outputs"
+alias fbw="fvm flutter pub run build_runner watch --delete-conflicting-outputs"
+alias vgdp="fvm flutter pub run build_runner watch --delete-conflicting-outputs"
+alias vgfp="fvm flutter pub run build_runner watch --delete-conflicting-outputs"
+alias vgpg="fvm flutter pub run build_runner watch --delete-conflicting-outputs"
+alias vgt="fvm flutter pub run build_runner watch --delete-conflicting-outputs"
 alias pn=pnpm
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+eval "$(zoxide init zsh)"
+
