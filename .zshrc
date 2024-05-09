@@ -106,6 +106,11 @@ export NVM_DIR="$HOME/.nvm"
 
 export PATH="$PATH:$HOME/fvm/default/bin"
 export PATH="$PATH":"$HOME/.pub-cache/bin"
+
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
 ## [Completion]
 ## Completion scripts setup. Remove the following line to uninstall
 [[ -f /Users/kamils/.dart-cli-completion/zsh-config.zsh ]] && . /Users/kamils/.dart-cli-completion/zsh-config.zsh || true
@@ -122,8 +127,16 @@ alias vgfp="fvm flutter pub run build_runner watch --delete-conflicting-outputs"
 alias vgpg="fvm flutter pub run build_runner watch --delete-conflicting-outputs"
 alias vgt="fvm flutter pub run build_runner watch --delete-conflicting-outputs"
 alias pn=pnpm
+alias adb='/Users/$USER/Library/Android/sdk/platform-tools/adb'
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+
 eval "$(zoxide init zsh)"
 
+
+[ -s "/Users/kamils/.bun/_bun" ] && source "/Users/kamils/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
