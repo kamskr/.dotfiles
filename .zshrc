@@ -121,11 +121,10 @@ alias fpg="fvm flutter pub get"
 alias ftc="fvm flutter test --coverage"
 alias fcr="genhtml coverage/lcov.info -o coverage/html && open coverage/html/index.html"
 alias fbw="fvm flutter pub run build_runner watch --delete-conflicting-outputs"
-alias fbw="fvm flutter pub run build_runner watch --delete-conflicting-outputs"
-alias vgdp="fvm flutter pub run build_runner watch --delete-conflicting-outputs"
-alias vgfp="fvm flutter pub run build_runner watch --delete-conflicting-outputs"
-alias vgpg="fvm flutter pub run build_runner watch --delete-conflicting-outputs"
-alias vgt="fvm flutter pub run build_runner watch --delete-conflicting-outputs"
+alias vgdp="very_good create dart_package"
+alias vgfp="very_good create flutter_package"
+alias vgpg="very_good packages get -r"
+alias vgt="very_good test -j 4 --recursive --optimization --coverage --test-randomize-ordering-seed random"
 alias pn=pnpm
 alias adb='/Users/$USER/Library/Android/sdk/platform-tools/adb'
 export ANDROID_SDK_ROOT=/Users/kamils/Library/Android/sdk
@@ -159,48 +158,3 @@ setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_IGNORE_SPACE
 setopt HIST_FIND_NO_DUPS
 setopt HIST_SAVE_NO_DUPS
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
