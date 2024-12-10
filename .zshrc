@@ -104,12 +104,12 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-export PATH="$PATH:$HOME/fvm/default/bin"
 export PATH="$PATH":"$HOME/.pub-cache/bin"
+export PATH="$PATH:$HOME/fvm/default/bin"
 
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
+# export PYENV_ROOT="$HOME/.pyenv"
+# [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+# eval "$(pyenv init -)"
 
 ## [Completion]
 ## Completion scripts setup. Remove the following line to uninstall
@@ -127,8 +127,11 @@ alias vgpg="very_good packages get -r"
 alias vgt="very_good test -j 4 --recursive --optimization --coverage --test-randomize-ordering-seed random"
 alias pn=pnpm
 alias adb='/Users/$USER/Library/Android/sdk/platform-tools/adb'
-export ANDROID_SDK_ROOT=/Users/kamils/Library/Android/sdk
-export PATH=$ANDROID_SDK_ROOT/platform-tools:$PATH
+alias v='nvim .'
+export ANDROID_HOME=/Users/kamskr/Library/Android/sdk
+export PATH=$ANDROID_HOME/platform-tools:$PATH
+export PATH=$ANDROID_HOME/tools:$PATH
+export PATH=$ANDROID_HOME/ndk-build:$PATH
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
@@ -146,6 +149,9 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 export JAVA_HOME="/opt/homebrew/opt/openjdk/libexec/openjdk.jdk/Contents/Home"
 export PATH="$JAVA_HOME/bin:$PATH"
 
+# Load environment variables from .env file
+export ANTHROPIC_API_KEY=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
+
 # FZF in history
 source <(fzf --zsh)
 HISTFILE=~/.zsh_history
@@ -158,3 +164,4 @@ setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_IGNORE_SPACE
 setopt HIST_FIND_NO_DUPS
 setopt HIST_SAVE_NO_DUPS
+set -o vi
