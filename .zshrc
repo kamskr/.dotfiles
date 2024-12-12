@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -116,7 +123,11 @@ export PATH="$PATH:$HOME/fvm/default/bin"
 [[ -f /Users/kamils/.dart-cli-completion/zsh-config.zsh ]] && . /Users/kamils/.dart-cli-completion/zsh-config.zsh || true
 ## [/Completion]
 
+eval "$(zoxide init zsh)"
+
 # Aliases
+alias ls="eza --icons=always"
+alias cd="z"
 alias fpg="fvm flutter pub get"
 alias ftc="fvm flutter test --coverage"
 alias fcr="genhtml coverage/lcov.info -o coverage/html && open coverage/html/index.html"
@@ -128,6 +139,8 @@ alias vgt="very_good test -j 4 --recursive --optimization --coverage --test-rand
 alias pn=pnpm
 alias adb='/Users/$USER/Library/Android/sdk/platform-tools/adb'
 alias v='nvim .'
+
+
 export ANDROID_HOME=/Users/kamskr/Library/Android/sdk
 export PATH=$ANDROID_HOME/platform-tools:$PATH
 export PATH=$ANDROID_HOME/tools:$PATH
@@ -135,9 +148,6 @@ export PATH=$ANDROID_HOME/ndk-build:$PATH
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
-
-eval "$(zoxide init zsh)"
-
 
 [ -s "/Users/kamils/.bun/_bun" ] && source "/Users/kamils/.bun/_bun"
 
@@ -150,7 +160,9 @@ export JAVA_HOME="/opt/homebrew/opt/openjdk/libexec/openjdk.jdk/Contents/Home"
 export PATH="$JAVA_HOME/bin:$PATH"
 
 # Load environment variables from .env file
-export ANTHROPIC_API_KEY=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
+if [ -f "$HOME/.env" ]; then
+  export $(grep -v '^#' "$HOME/.env" | xargs)
+fi
 
 # FZF in history
 source <(fzf --zsh)
@@ -165,3 +177,13 @@ setopt HIST_IGNORE_SPACE
 setopt HIST_FIND_NO_DUPS
 setopt HIST_SAVE_NO_DUPS
 set -o vi
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
+source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
