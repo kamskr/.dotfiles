@@ -4,6 +4,7 @@ local config = wezterm.config_builder()
 
 config.font_size = 12
 config.font = wezterm.font("MesloLGS Nerd Font Mono")
+config.max_fps = 240
 
 config.enable_tab_bar = false
 config.window_decorations = "RESIZE"
