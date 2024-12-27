@@ -123,6 +123,7 @@ export PATH="$PATH:$HOME/fvm/default/bin"
 [[ -f /Users/kamils/.dart-cli-completion/zsh-config.zsh ]] && . /Users/kamils/.dart-cli-completion/zsh-config.zsh || true
 ## [/Completion]
 
+[[ -s "/Users/kamskr/.gvm/scripts/gvm" ]] && source "/Users/kamskr/.gvm/scripts/gvm"
 eval "$(zoxide init zsh)"
 
 # Aliases
@@ -187,3 +188,4 @@ source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
