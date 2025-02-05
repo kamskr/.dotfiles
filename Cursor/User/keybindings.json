@@ -1,0 +1,264 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+  {
+    "key": "ctrl+space",
+    "command": "editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+space",
+    "command": "-editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+cmd+c",
+    "command": "workbench.files.action.collapseExplorerFolders"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "explorer.newFile",
+    "when": "explorerViewletFocus && explorerViewletVisible"
+  },
+  {
+    "key": "r",
+    "command": "renameFile",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "enter",
+    "command": "-renameFile",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "editor.action.addSelectionToNextFindMatch",
+    "when": "editorFocus"
+  },
+  {
+    "key": "cmd+d",
+    "command": "-editor.action.addSelectionToNextFindMatch",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+w h",
+    "command": "workbench.action.focusLeftGroup"
+  },
+  {
+    "key": "ctrl+w j",
+    "command": "workbench.action.focusBelowGroup"
+  },
+  {
+    "key": "ctrl+w k",
+    "command": "workbench.action.focusAboveGroup"
+  },
+  {
+    "key": "ctrl+w l",
+    "command": "workbench.action.focusRightGroup"
+  },
+  {
+    "key": "ctrl+u",
+    "command": "editor.action.pageUpHover",
+    "when": "editorHoverFocused",
+  },
+  {
+    "key": "ctrl+d",
+    "command": "editor.action.pageDownHover",
+    "when": "editorHoverFocused",
+  },
+  {
+    "key": "k",
+    "command": "editor.action.scrollUpHover",
+    "when": "editorHoverFocused",
+  },
+  {
+    "key": "j",
+    "command": "editor.action.scrollDownHover",
+    "when": "editorHoverFocused",
+  },
+  // FILE TREE
+  {
+    "command": "workbench.action.focusLastEditorGroup",
+    "key": "ctrl+e",
+    "when": "!editorTextFocus"
+  },
+  {
+    "command": "workbench.files.action.focusFilesExplorer",
+    "key": "ctrl+e",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "n",
+    "command": "explorer.newFile",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "command": "renameFile",
+    "key": "r",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "command": "filesExplorer.cut",
+    "key": "x",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "shift+n",
+    "command": "explorer.newFolder",
+    "when": "explorerViewletFocus"
+  },
+  {
+    "command": "deleteFile",
+    "key": "d",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "space s g",
+    "command": "workbench.action.findInFiles",
+    "when": "vim.mode == 'Normal' && !inputFocus && !editorTextFocus && !inDebugRepl && !inQuickOpen && !suggestWidgetVisible"
+  },
+  {
+    "key": "space g s",
+    "command": "workbench.view.scm",
+    "when": "vim.mode == 'Normal' && !inputFocus && !editorTextFocus && !inDebugRepl && !inQuickOpen && !suggestWidgetVisible"
+  },
+  {
+    "key": "space g g",
+    "command": "git-graph.view",
+    "when": "vim.mode == 'Normal' && !inputFocus && !editorTextFocus && !inDebugRepl && !inQuickOpen && !suggestWidgetVisible"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "workbench.action.previousEditor",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.nextEditor",
+    "when": "!terminalFocus"
+  },
+  // Terminal
+  {
+    "key": "ctrl+h",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "cmd+shift+j",
+    "command": "workbench.action.togglePanel"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "workbench.action.terminal.new",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "cmd+1",
+    "command": "vscode-harpoon.gotoEditor1"
+  },
+  {
+    "key": "cmd+2",
+    "command": "vscode-harpoon.gotoEditor2"
+  },
+  {
+    "key": "cmd+3",
+    "command": "vscode-harpoon.gotoEditor3"
+  },
+  {
+    "key": "cmd+4",
+    "command": "vscode-harpoon.gotoEditor4"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "vscode-harpoon.editEditors"
+  },
+  {
+    "key": "cmd+e",
+    "command": "vscode-harpoon.editorQuickPick"
+  },
+  {
+    "key": "shift+cmd+g",
+    "command": "lazygit-vscode.toggle"
+  },
+  {
+    "key": "shift+cmd+l",
+    "command": "-lazygit-vscode.toggle"
+  },
+  {
+    "key": "shift+cmd+j",
+    "command": "-aiSettings.action.open",
+    "when": "!isSettingsPaneOpen"
+  },
+  {
+    "key": "shift+cmd+j",
+    "command": "-aiSettings.action.openhidden",
+    "when": "!isSettingsPaneOpen"
+  },
+  {
+    "key": "ctrl+o",
+    "command": "-extension.vim_ctrl+o",
+    "when": "editorTextFocus && vim.active && vim.use<C-o> && !inDebugRepl"
+  },
+  {
+    "key": "ctrl+o",
+    "command": "workbench.action.navigateBack",
+    "when": "canNavigateBack"
+  },
+  {
+    "key": "ctrl+-",
+    "command": "-workbench.action.navigateBack",
+    "when": "canNavigateBack"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "workbench.action.navigateForward",
+    "when": "canNavigateForward"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "-extension.vim_ctrl+i",
+    "when": "editorTextFocus && vim.active && vim.use<C-i> && !inDebugRepl"
+  },
+  {
+    "key": "shift+cmd+h",
+    "command": "-workbench.action.replaceInFiles"
+  },
+  {
+    "key": "shift+cmd+h",
+    "command": "workbench.action.terminal.toggleTerminal",
+    "when": "terminal.active"
+  },
+  {
+    "key": "ctrl+`",
+    "command": "-workbench.action.terminal.toggleTerminal",
+    "when": "terminal.active"
+  },
+  {
+    "key": "shift+cmd+b",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "cmd+b",
+    "command": "-workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "cmd+b",
+    "command": "workbench.action.focusSideBar"
+  },
+  {
+    "key": "cmd+0",
+    "command": "-workbench.action.focusSideBar"
+  },
+  {
+    "key": "cmd+g",
+    "command": "workbench.action.focusFirstEditorGroup"
+  },
+  {
+    "key": "cmd+1",
+    "command": "-workbench.action.focusFirstEditorGroup"
+  },
+]

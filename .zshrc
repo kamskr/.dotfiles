@@ -189,3 +189,14 @@ source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+
+# Added by Windsurf
+export PATH="/Users/kamskr/.codeium/windsurf/bin:$PATH"
+
+# pnpm
+export PNPM_HOME="/Users/kamskr/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end

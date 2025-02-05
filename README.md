@@ -32,6 +32,7 @@ Then use GNU stow to create symlinks
 
 ```
 stow .
+stow -v -t ~/Library/Application\ Support/Cursor Cursor
 ```
 
 ## Install nerd fonts

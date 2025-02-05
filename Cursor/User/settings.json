@@ -1,0 +1,309 @@
+{
+  "workbench.iconTheme": "material-icon-theme",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.wordWrap": "on",
+  "explorer.confirmDragAndDrop": false,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [80],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off"
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "redhat.telemetry.enabled": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.linkedEditing": true,
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "markdown.preview.fontSize": 12,
+  "scm.inputFontSize": 12,
+  "typescript.suggest.paths": false,
+  "editor.bracketPairColorization.enabled": true,
+  "dart.flutterSdkPath": ".fvm/flutter_sdk",
+  "search.exclude": {
+    "**/.fvm": true
+  },
+  "files.watcherExclude": {
+    "**/.fvm": true
+  },
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "text.html.markdown.journal.task.open.bullet",
+        "settings": {
+          "foreground": "#FFFF00"
+        }
+      },
+      {
+        "scope": "text.html.markdown.journal.task.open.marker",
+        "settings": {
+          "foreground": "#FFFF00"
+        }
+      },
+      {
+        "scope": "text.html.markdown.journal.task.open.keyword",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": "text.html.markdown.journal.task.open.text",
+        "settings": {}
+      },
+      {
+        "scope": "text.html.markdown.journal.task.completed.keyword",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": "text.html.markdown.journal.task.completed.marker",
+        "settings": {
+          "foreground": "#AAAAAA"
+        }
+      },
+      {
+        "scope": "text.html.markdown.journal.task.completed.text",
+        "settings": {
+          "foreground": "#AAAAAA"
+        }
+      },
+      {
+        "scope": "text.html.markdown.journal.task.completed.bullet",
+        "settings": {
+          "foreground": "#FFFF00"
+        }
+      },
+      {
+        "scope": "text.html.markdown.journal.memo.keyword",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": "text.html.markdown.journal.memo.bullet",
+        "settings": {
+          "foreground": "#FFFF00"
+        }
+      },
+      {
+        "scope": "text.html.markdown.journal.scope",
+        "settings": {
+          "foreground": "#FFFF00"
+        }
+      },
+      {
+        "scope": "text.html.markdown.journal.link.keyword",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": "text.html.markdown.journal.link.bullet",
+        "settings": {
+          "foreground": "#FFFF00"
+        }
+      }
+    ]
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "editor.accessibilitySupport": "off",
+  "dart.debugExternalPackageLibraries": true,
+  "dart.debugSdkLibraries": true,
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.fileNesting.patterns": {
+    "pubspec.yaml": ".packages, .metadata, pubspec.lock, .flutter-plugins, .flutter-plugins-dependencies, l10n.yaml, analysis_options.yaml, ./dart_tool/, config-*, flutter*, melos*, pubspec_overrides.yaml",
+    "*.dart": "${capture}.dart, ${capture}.g.dart, ${capture}.freezed.dart",
+    "firebase.json": ".firebaserc, firebase.json, firestore-debug.log, firestore.indexes.json, firestore.rules",
+    "README.md": "README.md, CHANGELOG.md, LICENSE"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  "editor.inlineSuggest.enabled": true,
+  "dart.showInspectorNotificationsForWidgetErrors": false,
+  "bloc.newBlocTemplate.type": "equatable",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "workbench.colorCustomizations": {
+    "list.inactiveSelectionBackground": "#ffffff1e",
+    "statusBar.background": "#005f5f",
+    "statusBar.noFolderBackground": "#005f5f",
+    "statusBar.debuggingBackground": "#005f5f",
+    "statusBar.foreground": "#ffffff",
+    "statusBar.debuggingForeground": "#ffffff"
+  },
+  "editor.formatOnSave": true,
+  "flutter-coverage.coverageFileNames": [
+    "lcov.info",
+    "cov.xml",
+    "coverage.xml",
+    "jacoco.xml"
+  ],
+  "editor.inlayHints.enabled": "offUnlessPressed",
+  "debug.toolBarLocation": "floating",
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "cursor.cpp.disabledLanguages": ["markdown"],
+  "dart.showTodos": false,
+  "vim.useSystemClipboard": true,
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["<leader>", "s", "g"],
+      "commands": ["workbench.action.findInFiles"]
+    },
+    {
+      "before": ["K"],
+      "commands": ["editor.action.moveLinesUpAction"]
+    },
+    {
+      "before": ["J"],
+      "commands": ["editor.action.moveLinesDownAction"]
+    },
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
+    },
+    {
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
+    }
+  ],
+  "vim.normalModeKeyBindings": [
+    // NAVIGATION
+    {
+      "before": ["-"],
+      "commands": ["workbench.view.explorer"],
+      "when": "editorFocus"
+    },
+    // splits
+    {
+      "before": ["leader", "v"],
+      "commands": [":vsplit"]
+    },
+    {
+      "before": ["leader", "h"],
+      "commands": [":split"]
+    },
+    // Git
+    {
+      "before": ["<leader>", "g", "s"],
+      "commands": ["workbench.view.scm"]
+    },
+    {
+      "before": ["<leader>", "g", "g"],
+      "commands": ["git-graph.view"]
+    },
+    // Lsp
+    {
+      "before": ["<leader>", "g", "r"],
+      "commands": ["editor.action.goToReferences"],
+      "when": "editorHasReferenceProvider"
+    },
+    {
+      "before": ["<leader>", "f", "r"],
+      "commands": ["references-view.findReferences"],
+      "when": "editorHasReferenceProvider"
+    },
+    {
+      "before": ["<leader>", "c", "a"],
+      "commands": ["editor.action.quickFix"]
+    },
+    {
+      "before": ["<leader>", "r", "n"],
+      "commands": ["editor.action.rename"]
+    },
+    {
+      "before": ["<leader>", "d", "s"],
+      "commands": ["workbench.action.gotoSymbol"]
+    },
+    {
+      "before": ["<leader>", "d", "b"],
+      "commands": ["editor.debug.action.toggleBreakpoint"]
+    },
+    {
+      "before": ["<leader>", "u"],
+      "commands": ["undoTreeView.focus"]
+    },
+    {
+      "before": ["K"],
+      "commands": ["editor.action.showDefinitionPreviewHover"]
+    },
+    {
+      "before": ["<leader>", "d", "l"],
+      "commands": ["workbench.actions.view.problems"]
+    },
+    {
+      "before": ["<leader>", "s", "g"],
+      "commands": ["workbench.action.findInFiles"]
+    },
+    {
+      "before": ["<leader>", "a"],
+      "commands": ["vscode-harpoon.addEditor"]
+    },
+    {
+      "before": ["<C-e>"],
+      "commands": ["vscode-harpoon.editorQuickPick"]
+    },
+    {
+      "before": ["<C-j>"],
+      "commands": ["vscode-harpoon.gotoPreviousHarpoonEditor"]
+    },
+    {
+      "before": ["<leader>", "u"],
+      "commands": ["gitlens.views.fileHistory.focus"]
+    },
+    {
+      "before": ["<leader>", "c", "b"],
+      "commands": ["extension.addCurrentFileToIndexDartDirName"]
+    },
+    {
+      "before": ["<leader>", "t", "r"],
+      "commands": ["testing.runAtCursor"],
+      "when": "editorFocus"
+    }
+  ],
+  "vim.leader": " ",
+  "workbench.editor.pinnedTabSizing": "shrink",
+  "workbench.editor.doubleClickTabToToggleEditorGroupSizes": "maximize",
+  "vim.smartRelativeLine": true,
+  "editor.lineNumbers": "relative",
+  "vim.highlightedyank.enable": true,
+  "dart.flutterGenerateLocalizationsOnSave": "manual",
+  "vim.hlsearch": true,
+  "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
+  "workbench.preferredLightColorTheme": "Catppuccin Latte",
+  "window.autoDetectColorScheme": true,
+  "workbench.editor.enablePreviewFromQuickOpen": true,
+  "git.openRepositoryInParentFolders": "never",
+  "window.nativeTabs": true,
+  "workbench.layoutControl.enabled": false,
+  "editor.renderWhitespace": "all",
+  "breadcrumbs.enabled": true,
+  "window.commandCenter": false,
+  "window.titleBarStyle": "native"
+}
