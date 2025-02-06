@@ -298,7 +298,6 @@
   "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
   "workbench.preferredLightColorTheme": "Catppuccin Latte",
   "window.autoDetectColorScheme": true,
-  "workbench.editor.enablePreviewFromQuickOpen": true,
   "git.openRepositoryInParentFolders": "never",
   "window.nativeTabs": true,
   "workbench.layoutControl.enabled": false,
