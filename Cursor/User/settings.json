@@ -20,7 +20,9 @@
   "[dart]": {
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
-    "editor.rulers": [80],
+    "editor.rulers": [
+      80
+    ],
     "editor.selectionHighlight": false,
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.suggestSelection": "first",
@@ -168,122 +170,259 @@
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
   },
-  "cursor.cpp.disabledLanguages": ["markdown"],
+  "cursor.cpp.disabledLanguages": [
+    "markdown"
+  ],
   "dart.showTodos": false,
   "vim.useSystemClipboard": true,
   "vim.visualModeKeyBindings": [
     {
-      "before": ["<leader>", "s", "g"],
-      "commands": ["workbench.action.findInFiles"]
+      "before": [
+        "<leader>",
+        "s",
+        "g"
+      ],
+      "commands": [
+        "workbench.action.findInFiles"
+      ]
     },
     {
-      "before": ["K"],
-      "commands": ["editor.action.moveLinesUpAction"]
+      "before": [
+        "K"
+      ],
+      "commands": [
+        "editor.action.moveLinesUpAction"
+      ]
     },
     {
-      "before": ["J"],
-      "commands": ["editor.action.moveLinesDownAction"]
+      "before": [
+        "J"
+      ],
+      "commands": [
+        "editor.action.moveLinesDownAction"
+      ]
     },
     {
-      "before": ["<"],
-      "commands": ["editor.action.outdentLines"]
+      "before": [
+        "<"
+      ],
+      "commands": [
+        "editor.action.outdentLines"
+      ]
     },
     {
-      "before": [">"],
-      "commands": ["editor.action.indentLines"]
+      "before": [
+        ">"
+      ],
+      "commands": [
+        "editor.action.indentLines"
+      ]
     }
   ],
   "vim.normalModeKeyBindings": [
     // NAVIGATION
     {
-      "before": ["-"],
-      "commands": ["workbench.view.explorer"],
+      "before": [
+        "-"
+      ],
+      "commands": [
+        "workbench.view.explorer"
+      ],
       "when": "editorFocus"
     },
     // splits
     {
-      "before": ["leader", "v"],
-      "commands": [":vsplit"]
+      "before": [
+        "leader",
+        "v"
+      ],
+      "commands": [
+        ":vsplit"
+      ]
     },
     {
-      "before": ["leader", "h"],
-      "commands": [":split"]
+      "before": [
+        "leader",
+        "h"
+      ],
+      "commands": [
+        ":split"
+      ]
     },
     // Git
     {
-      "before": ["<leader>", "g", "s"],
-      "commands": ["workbench.view.scm"]
+      "before": [
+        "<leader>",
+        "g",
+        "s"
+      ],
+      "commands": [
+        "workbench.view.scm"
+      ]
     },
     {
-      "before": ["<leader>", "g", "g"],
-      "commands": ["git-graph.view"]
+      "before": [
+        "<leader>",
+        "g",
+        "g"
+      ],
+      "commands": [
+        "git-graph.view"
+      ]
     },
     // Lsp
     {
-      "before": ["<leader>", "g", "r"],
-      "commands": ["editor.action.goToReferences"],
+      "before": [
+        "<leader>",
+        "g",
+        "r"
+      ],
+      "commands": [
+        "editor.action.goToReferences"
+      ],
       "when": "editorHasReferenceProvider"
     },
     {
-      "before": ["<leader>", "f", "r"],
-      "commands": ["references-view.findReferences"],
+      "before": [
+        "<leader>",
+        "f",
+        "r"
+      ],
+      "commands": [
+        "references-view.findReferences"
+      ],
       "when": "editorHasReferenceProvider"
     },
     {
-      "before": ["<leader>", "c", "a"],
-      "commands": ["editor.action.quickFix"]
+      "before": [
+        "<leader>",
+        "c",
+        "a"
+      ],
+      "commands": [
+        "editor.action.quickFix"
+      ]
     },
     {
-      "before": ["<leader>", "r", "n"],
-      "commands": ["editor.action.rename"]
+      "before": [
+        "<leader>",
+        "r",
+        "n"
+      ],
+      "commands": [
+        "editor.action.rename"
+      ]
     },
     {
-      "before": ["<leader>", "d", "s"],
-      "commands": ["workbench.action.gotoSymbol"]
+      "before": [
+        "<leader>",
+        "d",
+        "s"
+      ],
+      "commands": [
+        "workbench.action.gotoSymbol"
+      ]
     },
     {
-      "before": ["<leader>", "d", "b"],
-      "commands": ["editor.debug.action.toggleBreakpoint"]
+      "before": [
+        "<leader>",
+        "d",
+        "b"
+      ],
+      "commands": [
+        "editor.debug.action.toggleBreakpoint"
+      ]
     },
     {
-      "before": ["<leader>", "u"],
-      "commands": ["undoTreeView.focus"]
+      "before": [
+        "<leader>",
+        "u"
+      ],
+      "commands": [
+        "undoTreeView.focus"
+      ]
     },
     {
-      "before": ["K"],
-      "commands": ["editor.action.showDefinitionPreviewHover"]
+      "before": [
+        "K"
+      ],
+      "commands": [
+        "editor.action.showDefinitionPreviewHover"
+      ]
     },
     {
-      "before": ["<leader>", "d", "l"],
-      "commands": ["workbench.actions.view.problems"]
+      "before": [
+        "<leader>",
+        "d",
+        "l"
+      ],
+      "commands": [
+        "workbench.actions.view.problems"
+      ]
     },
     {
-      "before": ["<leader>", "s", "g"],
-      "commands": ["workbench.action.findInFiles"]
+      "before": [
+        "<leader>",
+        "s",
+        "g"
+      ],
+      "commands": [
+        "workbench.action.findInFiles"
+      ]
     },
     {
-      "before": ["<leader>", "a"],
-      "commands": ["vscode-harpoon.addEditor"]
+      "before": [
+        "<leader>",
+        "a"
+      ],
+      "commands": [
+        "vscode-harpoon.addEditor"
+      ]
     },
     {
-      "before": ["<C-e>"],
-      "commands": ["vscode-harpoon.editorQuickPick"]
+      "before": [
+        "<C-e>"
+      ],
+      "commands": [
+        "vscode-harpoon.editorQuickPick"
+      ]
     },
     {
-      "before": ["<C-j>"],
-      "commands": ["vscode-harpoon.gotoPreviousHarpoonEditor"]
+      "before": [
+        "<C-j>"
+      ],
+      "commands": [
+        "vscode-harpoon.gotoPreviousHarpoonEditor"
+      ]
     },
     {
-      "before": ["<leader>", "u"],
-      "commands": ["gitlens.views.fileHistory.focus"]
+      "before": [
+        "<leader>",
+        "u"
+      ],
+      "commands": [
+        "gitlens.views.fileHistory.focus"
+      ]
     },
     {
-      "before": ["<leader>", "c", "b"],
-      "commands": ["extension.addCurrentFileToIndexDartDirName"]
+      "before": [
+        "<leader>",
+        "c",
+        "b"
+      ],
+      "commands": [
+        "extension.addCurrentFileToIndexDartDirName"
+      ]
     },
     {
-      "before": ["<leader>", "t", "r"],
-      "commands": ["testing.runAtCursor"],
+      "before": [
+        "<leader>",
+        "t",
+        "r"
+      ],
+      "commands": [
+        "testing.runAtCursor"
+      ],
       "when": "editorFocus"
     }
   ],
@@ -303,6 +442,8 @@
   "workbench.layoutControl.enabled": false,
   "editor.renderWhitespace": "all",
   "breadcrumbs.enabled": true,
+  "workbench.editor.enablePreview": false,
   "window.commandCenter": false,
-  "window.titleBarStyle": "native"
+  "eslint.format.enable": true,
+  "git.enableSmartCommit": true,
 }
