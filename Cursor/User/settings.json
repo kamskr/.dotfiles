@@ -168,7 +168,7 @@
   "editor.inlayHints.enabled": "offUnlessPressed",
   "debug.toolBarLocation": "floating",
   "extensions.experimental.affinity": {
-    "asvetliakov.vscode-neovim": 1
+    "vscodevim.vim": 1
   },
   "cursor.cpp.disabledLanguages": [
     "markdown"
@@ -446,4 +446,5 @@
   "window.commandCenter": false,
   "eslint.format.enable": true,
   "git.enableSmartCommit": true,
+  "vim.foldfix": true,
 }
