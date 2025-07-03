@@ -133,6 +133,7 @@ alias fpg="fvm flutter pub get"
 alias ftc="fvm flutter test --coverage"
 alias fcr="genhtml coverage/lcov.info -o coverage/html && open coverage/html/index.html"
 alias fbw="fvm dart run build_runner watch --delete-conflicting-outputs"
+alias fbr="fvm dart run build_runner build --delete-conflicting-outputs"
 alias vgdp="very_good create dart_package"
 alias vgfp="very_good create flutter_package"
 alias vgpg="very_good packages get -r"
@@ -202,3 +203,6 @@ esac
 # pnpm end
 
 . "$HOME/.local/bin/env"
+
+# Added by Windsurf
+export PATH="/Users/kamskr/.codeium/windsurf/bin:$PATH"

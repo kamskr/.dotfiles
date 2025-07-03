@@ -447,4 +447,5 @@
   "eslint.format.enable": true,
   "git.enableSmartCommit": true,
   "vim.foldfix": true,
+  "extensions.ignoreRecommendations": true,
 }
